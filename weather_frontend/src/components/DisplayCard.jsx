@@ -1,12 +1,12 @@
 import React from 'react';
 
-/**
 // PUBLIC_INTERFACE
+/**
+ * Displays weather information.
+ * Expects normalized data:
+ * { city, tempC, condition, iconUrl, humidity, windKph, feelsLikeC }
+ */
 function DisplayCard({ data }) {
-  /** Displays weather information.
-   * Expects normalized data:
-   * { city, tempC, condition, iconUrl, humidity, windKph, feelsLikeC }
-   */
   if (!data) return null;
 
   const {
